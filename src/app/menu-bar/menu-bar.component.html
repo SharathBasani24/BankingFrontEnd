@@ -1,0 +1,36 @@
+<!-- <div class="sticky-top navbar-dark navbar bg-dark"> -->
+<!-- <div class="sticky-top navbar navbar-dark bg-dark">
+  <a class="btn btn-dark" href="#">Home</a>
+  <a class="btn btn-dark" href="admin_dashboard">Admin</a>
+  <a class="btn btn-dark" href="userDashboard">dashboard</a>
+  <a class="btn btn-dark" href="user_registration">User Register</a>
+  <a class="btn btn-dark" href="aboutUs">About us</a>
+  <a class="btn btn-dark mr-auto" href="user_login">User Login</a>
+  <a class="btn btn-danger" href="#">Logout</a>
+</div>
+<p>menu-bar works!</p> -->
+<router-outlet></router-outlet>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mr-auto">
+  <a class="navbar-brand mr-auto" href="#">HDFC Bank </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <a class="btn btn-dark" href="dashboard">Account Details</a>
+      <a class="btn btn-dark" href="accountStatement">Account Statement</a>
+      <a class="btn btn-dark" href="transferFunds">Funds Transfer</a>
+      <a class="btn btn-dark" href="changePassword">Change Password</a>
+      <a class="btn btn-outline-light" (click)="logout()" href="#">Logout</a>
+    </ul>
+  </div>
+</nav>
